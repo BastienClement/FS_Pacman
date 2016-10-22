@@ -1,6 +1,6 @@
 ## Interface: 70000
 ## Title: |cff64b4ffFrom Scratch|r Pacman
-## Description: Lua package manager
+## Note: Lua package manager
 ## SavedVariables: PACMAN_DB2
 ## Dependencies: FS_Core
 

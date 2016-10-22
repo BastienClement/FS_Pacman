@@ -1,4 +1,3 @@
-local _, FS = ...
 local Pacman = FS:RegisterModule("Pacman")
 
 local AceConfig = LibStub("AceConfig-3.0")

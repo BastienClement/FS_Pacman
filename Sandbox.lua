@@ -1,4 +1,3 @@
-local _, FS = ...
 local Pacman = FS:GetModule("Pacman")
 local Sandbox, Store = Pacman:SubModule("Sandbox")
 

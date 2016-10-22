@@ -1,4 +1,3 @@
-local _, FS = ...
 local Pacman = FS:GetModule("Pacman")
 local Editor, Store = Pacman:SubModule("Editor")
 

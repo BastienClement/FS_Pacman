@@ -1,4 +1,3 @@
-local _, FS = ...
 local Pacman = FS:GetModule("Pacman")
 
 -- Keep private. Do not initialize as SubModule.
@@ -46,11 +45,17 @@ status = setmetatable({}, {
 -------------------------------------------------------------------------------
 
 function Store:OnInitialize()
+	-- Migration from PACMAN_DB to PACMAN_DB2
+	if type(PACMAN_DB) == "table" then
+		PACMAN_DB2 = PACMAN_DB
+		PACMAN_DB = nil
+	end
+
 	-- Initialize database object
-	if type(PACMAN_DB) ~= "table" then PACMAN_DB = {} end
+	if type(PACMAN_DB2) ~= "table" then PACMAN_DB2 = {} end
 
 	-- Move the database to a local variable
-	db = PACMAN_DB
+	db = PACMAN_DB2
 	--PACMAN_DB = nil
 
 	-- MESSING WITH SAVED VARIABLES IS DANGEROUS

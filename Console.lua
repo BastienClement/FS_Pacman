@@ -1,4 +1,3 @@
-local _, FS = ...
 local Pacman = FS:GetModule("Pacman")
 local Console, Store = Pacman:SubModule("Console", "AceConsole-3.0")
 

@@ -1,4 +1,3 @@
-local _, FS = ...
 local Pacman = FS:GetModule("Pacman")
 local Updater, Store = Pacman:SubModule("Updater", "AceEvent-3.0")
 
